@@ -1,0 +1,30 @@
+
+@media (max-width: 767.98px) {
+ .offcanvas-collapse {
+    position: fixed;
+    z-index: 100;
+    top: 98px;
+    bottom: 0;
+    right: -16px;
+    width: 50%;
+    /* padding-right: 1rem; */
+    /* padding-left: 1rem; */
+    overflow-y: auto;
+    background-color: white;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.offcanvas-collapse a{
+  color: black;
+}
+.offcanvas-collapse a:hover{
+  color: #f50 !important;
+}
+  .offcanvas-collapse.open {
+    -webkit-transform: translateX(-1rem);
+    transform: translateX(-1rem); /* Account for horizontal padding on navbar */
+  }
+}
